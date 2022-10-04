@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-echo test3
 CDIR="$(cd "$(dirname "$0")" && pwd)"
 build_dir=$CDIR/build
-echo test1
 while getopts A:K:q option
 do
   case "${option}"
@@ -21,7 +19,6 @@ do
     cp $CDIR/$f $build_dir/
 done
 
-echo test
 url='https://github.com/spaceship-prompt/spaceship-prompt.git'
 home_dir=$build_dir/spaceship-prompt
 cd $build_dir

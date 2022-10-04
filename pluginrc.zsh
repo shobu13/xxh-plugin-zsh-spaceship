@@ -1,5 +1,3 @@
-echo start pluginrc
 CURR_DIR="$(cd "$(dirname "$0")" && pwd)"
-export ZSH_THEME="spaceship"
+unset ZSH_THEME
 source $CURR_DIR/spaceship-prompt/spaceship.zsh-theme
-echo end pluginrc
