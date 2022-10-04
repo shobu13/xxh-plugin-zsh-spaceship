@@ -14,7 +14,7 @@ done
 rm -rf $build_dir
 mkdir -p $build_dir
 
-for f in 090-pluginrc.zsh
+for f in 010-pluginrc.zsh
 do
     cp $CDIR/$f $build_dir/
 done
